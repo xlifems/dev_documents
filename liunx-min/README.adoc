@@ -14,7 +14,7 @@ del usuario root
 
     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 
-o el si queremos asignarle contraseña asignamos una asi:
+O si queremos asignarle una contraseña lo hacemos así:
 
     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 
