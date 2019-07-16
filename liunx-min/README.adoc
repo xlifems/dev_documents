@@ -23,4 +23,25 @@ O si queremos asignarle una contraseña lo hacemos así:
 
 Otra opcion es dar de alta a nuestro usuario en los usuarios de mysql server.
 
-
+       sudo mysql -u root -p
+       
+ Dentro de la consola de mysql hacemos:
+ 
+       mysql> use mysql;
+       mysql> select user, host, plugin from mysql.user;
+       mysql> create user 'username'@'localhost' identified by 'new_password';
+       mysql> grant all privileges on *.* to 'username'@'localhost';
+       mysql> update user set plugin = "auth_socket" where user='username';
+       mysql> flush privileges;
+       mysql> exit;
+       mysql> sudo service mysql restart
+       
+Otra opcion seria cambiar el plugin del root user 
+            
+        $ sudo mysql -u root -p
+        
+        mysql> use mysql
+        mysql> select user, host, plugin from mysql.user;
+        mysql> update user set plugin="mysql_native_password" where User="root";
+        mysql> flush privileges;
+        mysql> exit;
