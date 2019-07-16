@@ -24,8 +24,8 @@ O si queremos asignarle una contraseña lo hacemos así:
 Otra opcion es dar de alta a nuestro usuario en los usuarios de mysql server.
 
        sudo mysql -u root -p
-       
- Dentro de la consola de mysql hacemos:
+
+Dentro de la consola de mysql hacemos:
  
        mysql> use mysql;
        mysql> select user, host, plugin from mysql.user;
