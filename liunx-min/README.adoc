@@ -1,0 +1,26 @@
+= MySQL Error Access Denied For Root User in Ubuntu Linux
+
+Cuando intentamos acceder a MySql y obtenemos el siguiente error.
+    
+    ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+    
+A continuacion podemos hacer lo siguiente, ingresamos a la terminal y con permisos de admin tecleamos.
+
+    sudo mysql -u root
+    "<contraseña root>"
+
+Una vez dentro de la linea de comandos de MySQL igitamos el siguiente comando para modificar los persmisos y contraseña
+del usuario root
+
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+
+o el si queremos asignarle contraseña asignamos una asi:
+
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+
+
+== Crear Nuevo usuario
+
+Otra opcion es dar de alta a nuestro usuario en los usuarios de mysql server.
+
+
