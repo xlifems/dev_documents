@@ -36,6 +36,8 @@ Otra opcion es dar de alta a nuestro usuario en los usuarios de mysql server.
        mysql> exit;
        mysql> sudo service mysql restart
        
+== Cambiar el plugin del root
+
 Otra opcion seria cambiar el plugin del root user 
             
         $ sudo mysql -u root -p
