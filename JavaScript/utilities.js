@@ -22,3 +22,28 @@ var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter(word => word.length > 6);
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+
+/********************************************************************************************/
+
+/** Ordenar array de objetos*/
+const datos = [
+    {date: "2020-01-17 14:39:27", message_received: "llegada numero", seen: true } ,
+    {date: "2020-01-16 15:25:24", message_received: "codigo2020", seen: true},
+    {date: "2020-01-19 16:25:24", message_received: "codigo2020", seen: true}
+];
+
+/** comparar mayor por el atributo date */
+function comparar(a, b) {
+    if (Date.parse(a.date) > Date.parse(b.date)) {
+        return -1;
+    }
+    if (Date.parse(a.date) < Date.parse(b.date)) {
+        return 1;
+    }
+    return 0;
+}
+
+const datosOrdenados = Array.from(datos).sort(comparar);
+
+
+/********************************************************************************************/
