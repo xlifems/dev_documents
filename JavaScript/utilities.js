@@ -47,3 +47,16 @@ const datosOrdenados = Array.from(datos).sort(comparar);
 
 
 /********************************************************************************************/
+
+/** comparar dos array y eliminar duplicados */
+
+const months = ['Jan', 'March', 'April', 'June', 'Sept'];
+const months2 = ['March'];
+
+console.log(months);
+// expected output: > Array ["Jan", "March", "April", "June", "Sept"]
+
+const res = months.filter((m,index,data) => months2.indexOf(m) < 0)
+
+console.log(res);
+// expected output: > Array ["Jan", "April", "June", "Sept"]
