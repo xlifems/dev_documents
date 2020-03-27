@@ -95,7 +95,9 @@ const timeOutPromise = (str) => {
       resolve(str);
     }, 200)
   })
-}(async () => {
+}
+
+(async () => {
   let val;
   val = await timeOutPromise('foo');
   console.log(val);
