@@ -1,4 +1,4 @@
-# JavaScript Clean Code: Concurrency
+# JavaScript Clean Code
 
 Concurrency is an important part of most modern programs. To achieve this in JavaScript, we have to use asynchronous code, which is non-blocking.
 
