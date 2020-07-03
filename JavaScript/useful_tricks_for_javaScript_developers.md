@@ -37,6 +37,8 @@ const skills = {
  };
 const summary = {...user, ...college, ...skills};
 
+````
+
 ## Destructuring some objects with Aliases
 
 When we destructuring an object is necessary to use the same variable names than appear in the object but is possible to destructuring to assignment with alias names
