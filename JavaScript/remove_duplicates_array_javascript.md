@@ -27,3 +27,19 @@ console.log(uniqueList());
 
 >> [1, 2, 3, 4, 5]
 ```
+
+A continuación eliminaremos duplicados en array de objetos
+
+```javascript
+let arr1 = [
+  { id: 1, username: 'lorem' },
+  { id: 2, username: 'ipsum' }
+];
+let arr2 = [
+  { id: 1, username: 'lorem' },
+  { id: 3, username: 'dolor' }
+];
+undefined
+let arr3 = arr1.concat( arr2.filter( element => arr1.find(e => e.id === element.id) === undefined ) )
+```
+
