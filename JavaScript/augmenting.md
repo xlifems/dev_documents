@@ -1,5 +1,5 @@
 
-# JavaScript Augmenting Pathern
+# JavaScript Augmenting Pattern
 
 The augmenting pather will permit us to add more method to the prototype of value
 
@@ -21,7 +21,7 @@ The augmenting pather will permit us to add more method to the prototype of valu
     console.log("hola".mayus()); // "HOLA"
 ```
 
-## Use Promises Instead of Callbacks
+## Use Augmenting Pattern
 
 For example,  ``` augmenting pattern  ```  if we want to find some matches multiple words inside of one in question  in other string:
 
