@@ -45,6 +45,28 @@ function comparar(a, b) {
 
 const datosOrdenados = Array.from(datos).sort(comparar);
 
+/** Ordenar por el atributo id */
+
+const data = [
+    {id: 23456 , name: "user-23456"},
+    {id: 23455 , name: "user-23455"},
+    {id: 23454 , name: "user-23454"},
+    {id: 23453 , name: "user-23453"},
+    {id: 23451 , name: "user-23451"},
+    {id: 23450 , name: "user-23450"},
+    {id: 23446 , name: "user-23446"},
+    {id: 23434 , name: "user-23434"},
+    {id: 23425 , name: "user-23425"},
+    {id: 23424 , name: "user-23424"},
+    {id: 23414 , name: "user-23414"},
+    {id: 23412 , name: "user-23412"},
+    null
+  ]
+
+data
+  .filter((element) => element?.id)
+  .sort((a, b) => a.id - b.id)
+
 
 /********************************************************************************************/
 
