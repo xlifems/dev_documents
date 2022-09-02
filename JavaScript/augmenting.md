@@ -36,3 +36,17 @@ For example,  ``` augmenting pattern  ```  if we want to find some matches multi
     const foundWord = str.findWords('monkey','xlifems','roronoa')
     console.log(foundWord) // true
 ```
+
+Other example
+
+```typescript
+String.prototype['Mayu'] =  function () {
+	return this.toUpperCase()
+}
+
+Number.prototype['km_formatter'] = function () {
+  //return num > 999 ? `${(num / 1000).toFixed(1)} km` : `${num} Mt`
+  return this * 1000 >= 1000 ?  `${this.toFixed(2)} Km`: `${(this * 1000).toFixed(2)} Mt`;
+}
+
+```
