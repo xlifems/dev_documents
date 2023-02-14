@@ -60,11 +60,11 @@ To validate if two JavaScript objects have the same properties, you can compare 
 
 ```javascript
 
-const obj1 = { name: "John", age: 30 };
-const obj2 = { age: 30, name: "John" };
+const object1 = { name: "John", age: 30 };
+const object2 = { age: 30, name: "John" };
 
-const keys1 = Object.keys(obj1);
-const keys2 = Object.keys(obj2);
+const keys1 = Object.keys(object1);
+const keys2 = Object.keys(object2);
 
 const haveSameProperties = keys1.length === keys2.length && keys1.every(key => keys2.includes(key));
 
