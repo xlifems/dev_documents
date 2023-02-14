@@ -53,6 +53,25 @@ const { number: renamingNumber } = object;
 console.log(renamingNumber); //10
 
 ```
+
+## 
+
+To validate if two JavaScript objects have the same properties, you can compare the arrays of keys from each object using the Object.keys() method and then compare the arrays using the Array.every() method. Here's an example:
+
+```javascript
+
+const obj1 = { name: "John", age: 30 };
+const obj2 = { age: 30, name: "John" };
+
+const keys1 = Object.keys(obj1);
+const keys2 = Object.keys(obj2);
+
+const haveSameProperties = keys1.length === keys2.length && keys1.every(key => keys2.includes(key));
+
+console.log(haveSameProperties); // true
+
+```
+
 ## Contributing
 10 Super Useful Tricks for JavaScript Developers
 ## License
