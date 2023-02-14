@@ -54,7 +54,7 @@ console.log(renamingNumber); //10
 
 ```
 
-## 
+## Validate if two JavaScript objects have the same properties
 
 To validate if two JavaScript objects have the same properties, you can compare the arrays of keys from each object using the Object.keys() method and then compare the arrays using the Array.every() method. Here's an example:
 
